@@ -1,0 +1,49 @@
+Understanding the path that data packets take to reach their destination is crucial for diagnosing network issues, understanding internet routing, and optimizing network performance.
+
+Example (google.com)
+
+Step 1:
+
+Open Terminal ; traceroute google.com and press enter
+
+traceroute: Warning: google.com has multiple addresses; using 142.250.115.100
+traceroute to google.com (142.250.115.100), 64 hops max, 40 byte packets
+ 1  dsldevice (192.168.1.254)  1.482 ms  0.767 ms  0.678 ms
+ 2  104-188-140-1.lightspeed.hstntx.sbcglobal.net (104.188.140.1)  2.103 ms  2.174 ms  1.906 ms
+ 3  71.149.39.74 (71.149.39.74)  3.086 ms  3.217 ms  3.177 ms
+ 4  * * *
+ 5  * * *
+ 6  32.130.20.14 (32.130.20.14)  8.159 ms *  8.514 ms
+ 7  32.130.17.87 (32.130.17.87)  8.157 ms  8.528 ms  8.871 ms
+ 8  * * *
+ 9  142.251.76.34 (142.251.76.34)  31.201 ms
+    142.251.71.112 (142.251.71.112)  24.057 ms  10.605 ms
+10  216.239.58.16 (216.239.58.16)  23.436 ms  14.362 ms  10.301 ms
+11  216.239.63.253 (216.239.63.253)  22.442 ms  10.133 ms
+    108.170.228.81 (108.170.228.81)  23.156 ms
+12  142.251.70.199 (142.251.70.199)  24.164 ms
+    108.170.225.111 (108.170.225.111)  22.292 ms
+    108.170.231.7 (108.170.231.7)  23.727 ms
+13  209.85.252.210 (209.85.252.210)  23.608 ms
+    142.250.236.158 (142.250.236.158)  21.945 ms
+    209.85.143.4 (209.85.143.4)  54.972 ms
+14  142.250.224.11 (142.250.224.11)  23.118 ms
+    209.85.143.223 (209.85.143.223)  23.059 ms
+    142.250.224.35 (142.250.224.35)  23.019 ms
+
+Step 2: Analyzing the Output:
+
+
+The output will display a list of 'hops'. Each hop represents a router or gateway that packets pass through on their way to the destination.
+
+From left to right : 1 - "hops" number in the sequence
+2 - the IP address of the hop
+3 - RTT or Round Trip Time: The round-trip time (RTT) for packets to reach that hop and return to your computer
+
+Summary - What Did We Learn?
+
+Internet Routing Complexity: Demonstrates the multiple intermediate steps a packet takes through different networks to reach its destination.
+
+Network Performance: The RTT times can give you an idea of the latency between your computer and each hop along the path.
+
+Troubleshooting: Identifying where packets are getting delayed or lost can help diagnose network connectivity issues.
