@@ -1,0 +1,49 @@
+malcolmhenry@Malcolms-MBP ~ % ping amazon.com
+PING amazon.com (54.239.28.85): 56 data bytes
+64 bytes from 54.239.28.85: icmp_seq=0 ttl=241 time=93.472 ms
+64 bytes from 54.239.28.85: icmp_seq=1 ttl=241 time=43.053 ms
+64 bytes from 54.239.28.85: icmp_seq=2 ttl=241 time=84.710 ms
+64 bytes from 54.239.28.85: icmp_seq=3 ttl=241 time=91.030 ms
+64 bytes from 54.239.28.85: icmp_seq=4 ttl=241 time=137.432 ms
+64 bytes from 54.239.28.85: icmp_seq=5 ttl=241 time=38.728 ms
+64 bytes from 54.239.28.85: icmp_seq=6 ttl=241 time=40.782 ms
+64 bytes from 54.239.28.85: icmp_seq=7 ttl=241 time=42.333 ms
+64 bytes from 54.239.28.85: icmp_seq=8 ttl=241 time=153.462 ms
+64 bytes from 54.239.28.85: icmp_seq=9 ttl=241 time=192.365 ms
+64 bytes from 54.239.28.85: icmp_seq=10 ttl=241 time=51.632 ms
+64 bytes from 54.239.28.85: icmp_seq=11 ttl=241 time=98.869 ms
+64 bytes from 54.239.28.85: icmp_seq=12 ttl=241 time=146.618 ms
+64 bytes from 54.239.28.85: icmp_seq=13 ttl=241 time=189.435 ms
+64 bytes from 54.239.28.85: icmp_seq=14 ttl=241 time=43.080 ms
+64 bytes from 54.239.28.85: icmp_seq=15 ttl=241 time=38.975 ms
+64 bytes from 54.239.28.85: icmp_seq=16 ttl=241 time=38.447 ms
+64 bytes from 54.239.28.85: icmp_seq=17 ttl=241 time=42.187 ms
+64 bytes from 54.239.28.85: icmp_seq=18 ttl=241 time=42.550 ms
+64 bytes from 54.239.28.85: icmp_seq=19 ttl=241 time=38.592 ms
+64 bytes from 54.239.28.85: icmp_seq=20 ttl=241 time=39.948 ms
+64 bytes from 54.239.28.85: icmp_seq=21 ttl=241 time=45.181 ms
+64 bytes from 54.239.28.85: icmp_seq=22 ttl=241 time=65.931 ms
+64 bytes from 54.239.28.85: icmp_seq=23 ttl=241 time=107.940 ms
+64 bytes from 54.239.28.85: icmp_seq=24 ttl=241 time=114.155 ms
+64 bytes from 54.239.28.85: icmp_seq=25 ttl=241 time=38.977 ms
+64 bytes from 54.239.28.85: icmp_seq=26 ttl=241 time=39.348 ms
+64 bytes from 54.239.28.85: icmp_seq=27 ttl=241 time=42.891 ms
+64 bytes from 54.239.28.85: icmp_seq=28 ttl=241 time=41.468 ms
+64 bytes from 54.239.28.85: icmp_seq=29 ttl=241 time=41.126 ms
+64 bytes from 54.239.28.85: icmp_seq=30 ttl=241 time=38.782 ms
+64 bytes from 54.239.28.85: icmp_seq=31 ttl=241 time=40.244 ms
+^C
+--- amazon.com ping statistics ---
+32 packets transmitted, 32 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 38.447/71.992/192.365/46.255 ms
+malcolmhenry@Malcolms-MBP ~ % ping -c 4 amazon.com
+PING amazon.com (54.239.28.85): 56 data bytes
+64 bytes from 54.239.28.85: icmp_seq=0 ttl=241 time=39.028 ms
+64 bytes from 54.239.28.85: icmp_seq=1 ttl=241 time=41.123 ms
+64 bytes from 54.239.28.85: icmp_seq=2 ttl=241 time=38.532 ms
+64 bytes from 54.239.28.85: icmp_seq=3 ttl=241 time=43.098 ms
+
+--- amazon.com ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 38.532/40.445/43.098/1.814 ms
+malcolmhenry@Malcolms-MBP ~ % 
